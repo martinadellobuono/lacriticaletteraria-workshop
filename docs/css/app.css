@@ -1,0 +1,449 @@
+body {
+    background-color:#fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-full-screen {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154493f6c27ea3/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
+    background-size: cover;
+}
+  
+.hero-full-screen .middle-content-section {
+    text-align: center;
+    color: #fefefe;
+}
+  
+.hero-full-screen .top-content-section {
+    width: 100%;
+}
+  
+.hero-full-screen .bottom-content-section {
+    padding: 1rem;
+}
+  
+.hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #cccccc;
+}
+  
+.hero-full-screen .top-bar {
+    background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+    background: transparent;
+}
+
+.menu {
+    float: right;
+    text-transform: uppercase;
+    font-size: smaller;
+    letter-spacing: 1.5px;
+}
+
+.hero-full-screen .top-bar .menu-text {
+color: #fefefe;
+}
+
+.hero-full-screen .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.hero-full-screen .top-bar .menu a {
+    color: #323233;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.hero-full-screen .top-bar .menu a:hover {
+    color: #52c5d9;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.top-content-section {
+    position: fixed;
+}
+
+.full-screen-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 65px;
+    color: #323232;
+}
+
+.middle-content-section {
+    margin-top: 9%;
+}
+
+.button.large {
+    font-size: 16px;
+}
+
+.full-screen-button {
+    float: left;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #52c5d9;
+    border: 1px solid #52c5d9;
+    border-radius: 37px;
+}
+
+.full-screen-p {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #323232;
+}
+
+hr {
+    border: 6px solid #52c5d9;
+}
+
+.page-title {
+color: #323232;
+font-family: 'Roboto', sans-serif;
+font-size: 35px;
+font-weight: 900;
+text-align: right;
+text-transform: uppercase;
+}
+
+.page-hr {
+    margin-top: 0px;
+    float: right;
+    width: 80%;
+}
+
+.grid-container {
+    margin-top: 60px;
+}
+
+.page-text {
+    margin-top: 60px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.strip {
+    background-color: #fff;
+}
+
+.margin-top {
+    margin-top: 60px;
+}
+
+.margin-bottom {
+    margin-bottom: 60px;
+}
+
+.page-center-hr {
+    margin-top: 0px;
+    width: 43%;
+    border: 6px solid #fff;
+}
+
+.page-center-title {
+    color: #323232;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.icon {
+    display: block;
+    margin: 0px auto;
+    width: 150px;
+}
+
+.icon-title {
+    margin-top: 30px;
+    color: #323232;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.icon-p {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.news-strip {
+    background-color: #fff;
+}
+
+.news-hr {
+    margin-top: 0px;
+    width: 43%;
+    border: 6px solid #52c5d9;
+}
+
+
+.card {
+    position: relative;
+    z-index: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+    border: 0;
+    border-radius: 0;
+    background: #fefefe;
+    box-shadow: none;
+    overflow: hidden;
+    color: #0a0a0a;
+}
+
+.card-content {
+    position: relative;
+}
+
+.card-content::before {
+    position: absolute;
+    top: -3.4375rem;
+    left: -1.875rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.4375rem 0 0 31.25rem;
+    z-index: 0;
+    border-color: transparent transparent transparent #fefefe;
+}
+
+.card-img {
+    width: 62%;
+    height: 23pc;
+    margin: 0 auto;
+}
+
+.about-img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 75%;
+    height: auto;
+}
+
+.footer-strip {
+    background-color: #323232;
+}
+
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+}
+
+.program-strip {
+    background-color: #52c5d9;
+}
+
+.copyright-strip {
+    background-color: #52c5d9;
+}
+
+.footer-p {
+    color: #fff;
+    text-align: center;
+}
+
+.copyright-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.contact-strip {
+    background-color:#f2f2f2;
+}
+
+.contact-hr {
+    margin-top: 0px;
+    border: 6px solid #fff;
+}
+
+
+.form-floating-label {
+    position: relative;
+    
+  }
+  
+  .form-floating-label [type='text'],
+  .form-floating-label [type='password'],
+  .form-floating-label [type='date'],
+  .form-floating-label [type='datetime'],
+  .form-floating-label [type='datetime-local'],
+  .form-floating-label [type='month'],
+  .form-floating-label [type='week'],
+  .form-floating-label [type='email'],
+  .form-floating-label [type='number'],
+  .form-floating-label [type='search'],
+  .form-floating-label [type='tel'],
+  .form-floating-label [type='time'],
+  .form-floating-label [type='url'],
+  .form-floating-label [type='color'],
+  .form-floating-label textarea {
+    margin-bottom: 0;
+    color: #8a8a8a;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 30px 1rem 1rem 25px;
+    border: 1px solid transparent;
+  }
+  
+  .form-floating-label label {
+    color: #cacaca;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 25px;
+    bottom: 0;
+    transition: all 0.2s ease-in;
+    font-weight: 300;
+  }
+  
+  .form-floating-label textarea ~ label {
+    top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .form-floating-label input:focus ~ label,
+  .form-floating-label input:disabled[value] ~ label,
+  .form-floating-label.has-value input ~ label {
+    top: 0;
+    font-size: 14px;
+    color: #52c5d9;
+    font-weight: 400;
+  }
+  
+  .form-floating-label textarea:focus ~ label,
+  .form-floating-label.has-value textarea ~ label {
+    top: 0;
+    font-size: 14px;
+    color: #52c5d9;
+    font-weight: 400;
+  }
+  
+.mail-button {
+    float: right;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #52c5d9;
+    border: 1px solid #52c5d9;
+    border-radius: 37px;
+}  
+
+iframe {
+    width: 95%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .full-screen-title {
+        margin-top: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 39px;
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 47px;
+        color: #323232;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-img {
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .page-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .page-hr {
+        margin-top: 0px;
+        max-width: 75rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .full-screen-p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .page-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .page-hr {
+        margin-top: 0px;
+        float: none;
+        width: 80%;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .margin-top-media {
+        margin-top: 30px;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .margin-top-media {
+        margin-top: 30px;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .card-img {
+        width: 44%;
+        height: 13pc;
+        margin: 0 auto;
+    }    
+}
+
+
+
