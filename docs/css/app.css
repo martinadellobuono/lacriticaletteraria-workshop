@@ -402,6 +402,7 @@ iframe {
 
 @media screen and (max-width: 800px) {
     .page-title {
+        margin-top: 35px;
         text-align: center;
     }
 }
