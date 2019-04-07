@@ -375,7 +375,7 @@ iframe {
     .full-screen-title {
         margin-top: 50px;
         font-family: 'Roboto', sans-serif;
-        font-size: 39px;
+        font-size: 33px;
         text-align: left;
         text-transform: uppercase;
         line-height: 47px;
@@ -407,7 +407,7 @@ iframe {
 
 @media screen and (max-width: 800px) {
     .full-screen-p {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
@@ -447,12 +447,17 @@ iframe {
 
 @media screen and (max-width: 800px) {
     .mail-button {
-        margin-top: 30px;
+        float:none;
         display: block;
         margin: 0 auto;
-        color: #fff;
-        background-color: #52c5d9;
-        border: 1px solid #52c5d9;
-        border-radius: 37px;
-    } 
+        margin-top: 30px;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .hero-full-screen .bottom-content-section svg {
+        height: 2.75rem;
+        width: 3.75rem;
+        fill: #cccccc;
+    }
 }
