@@ -17,7 +17,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154493f6c27ea3/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
+    background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154790f4c77ea0/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
     background-size: cover;
 }
   
@@ -69,9 +69,10 @@ color: #fefefe;
 }
 
 .hero-full-screen .top-bar .menu a {
-    color: #323233;
-    background-color: #fff;
+    font-size: 14px;
     font-weight: bold;
+    color: #323233;
+    background-color: transparent;
 }
 
 .hero-full-screen .top-bar .menu a:hover {
@@ -82,7 +83,7 @@ color: #fefefe;
 
 .title-bar {
     padding: 0.5rem;
-    background: #323232;
+    background: transparent;
     color: #fefefe;
     display: -webkit-box;
     display: -webkit-flex;
@@ -96,6 +97,18 @@ color: #fefefe;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.title-bar-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    color: #323232;
+}
+
+.menu-icon::after {
+    background: #323232;
+    box-shadow: 0 7px 0 #323232, 0 14px 0 #323232;
 }
 
 .top-content-section {
@@ -165,6 +178,66 @@ text-transform: uppercase;
     font-size: 18px;
 }
 
+.card-profile-stats {
+    border: 1px solid #fefefe;
+    margin: 60px 0 0;
+    padding: 1.25rem;
+    background: #fefefe;
+  }
+  
+  .card-profile-stats .card-profile-stats-intro {
+    text-align: center;
+  }
+  
+  .card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+  
+  .card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-content p:last-child {
+    margin: 0;
+  }
+  
+  .card-profile-stats .card-profile-stats-container {
+    text-align: center;
+  }
+  
+  .card-profile-stats .card-profile-stats-container .card-profile-stats-statistic {
+    margin: 0 0 1.25rem;
+  }
+  
+  .card-profile-stats .card-profile-stats-container .card-profile-stats-statistic p:last-child {
+    margin: 0;
+  }
+  
+  .card-profile-stats .card-profile-stats-more .card-profile-stats-more-link {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0a0a0a;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+.card-profile-stats .card-profile-stats-more .card-profile-stats-more-content {
+    display: none;
+}
+
+.speaker-title {
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.speaker-p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
 .strip {
     background-color: #fff;
 }
@@ -190,6 +263,11 @@ text-transform: uppercase;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
+}
+
+
+.page-center-text {
+    text-align: center;
 }
 
 .icon {
@@ -221,7 +299,6 @@ text-transform: uppercase;
     width: 43%;
     border: 6px solid #52c5d9;
 }
-
 
 .card {
     position: relative;
@@ -309,7 +386,9 @@ text-transform: uppercase;
 
 .contact-hr {
     margin-top: 0px;
+    float: right;
     border: 6px solid #fff;
+    width: 43%;
 }
 
 
@@ -391,15 +470,36 @@ iframe {
     height: 100%;
 }
 
+.form-floating-label [type='text'], .form-floating-label [type='password'], .form-floating-label [type='date'], .form-floating-label [type='datetime'], .form-floating-label [type='datetime-local'], .form-floating-label [type='month'], .form-floating-label [type='week'], .form-floating-label [type='email'], .form-floating-label [type='number'], .form-floating-label [type='search'], .form-floating-label [type='tel'], .form-floating-label [type='time'], .form-floating-label [type='url'], .form-floating-label [type='color'], .form-floating-label textarea {
+    margin-bottom: 7px;
+    color: #8a8a8a;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 30px 1rem 1rem 25px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 800px) {
     .full-screen-title {
-        margin-top: 50px;
+        padding-top: 35%;
         font-family: 'Roboto', sans-serif;
         font-size: 33px;
         text-align: left;
         text-transform: uppercase;
         line-height: 47px;
         color: #323232;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero-full-screen .top-bar .menu a {
+        margin: 1px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        color: #323233;
+        background-color: whitesmoke;
     }
 }
 
@@ -502,6 +602,15 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
+    .contact-hr {
+        margin-top: 0px;
+        float: none;
+        border: 6px solid #fff;
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .mail-form {
         margin-top: 30px;
     }
@@ -527,3 +636,49 @@ iframe {
 .sticky-container {
   z-index: 5;
 }
+
+@media print, screen and (min-width: 64em) {
+    .card-profile-stats .card-profile-stats-intro {
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      text-align: left;
+    }
+    .card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+      margin: 0 auto;
+      max-width: 200px;
+    }
+    .card-profile-stats .card-profile-stats-container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+    }
+  }
+
+  @media print, screen and (max-width: 800px){
+    .speaker-title {
+        margin-top: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+  }
+
+  @media print, screen and (max-width: 800px){
+    .card-profile-stats-intro-pic {
+        width: 45%;
+    }
+  }
