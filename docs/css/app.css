@@ -441,6 +441,17 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
+    .page-center-title {
+        color: #323232;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .page-hr {
         margin-top: 0px;
         max-width: 75rem;
@@ -449,7 +460,7 @@ iframe {
 
 @media screen and (max-width: 800px) {
     .full-screen-p {
-        font-size: 17px;
+        font-size: 14px;
     }
 }
 
