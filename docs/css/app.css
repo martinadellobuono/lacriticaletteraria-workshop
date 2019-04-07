@@ -471,6 +471,12 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
+    .hero-full-screen .bottom-content-section {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .mail-form {
         margin-top: 30px;
     }
