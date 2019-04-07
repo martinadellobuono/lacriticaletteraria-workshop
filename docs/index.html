@@ -12,21 +12,26 @@
     <link rel="shortcut icon" type="" href="logo/logo.ico"/>
   </head>
   <body>
+    
     <div class="hero-full-screen" id="home">
-
       <div class="top-content-section">
-        <div class="top-bar">
-          <div class="top-bar-left">
-            <ul class="menu">
-              <!--<li class="menu-text"><img src="http://placehold.it/75x30" alt="logo"></li>-->
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#programma">Programma</a></li>
-              <li><a href="#news">News</a></li>
-              <li><a href="#contatti">Contatti</a></li>
-            </ul>
+        <div data-sticky-container>
+          <div data-sticky data-options="marginTop:0;">
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+              <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+              <div class="title-bar-title">Menu</div>
+            </div>
+            <div class="top-bar" id="example-menu">
+              <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programma">Programma</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </div>            
       </div>
       
       <div class="middle-content-section">
