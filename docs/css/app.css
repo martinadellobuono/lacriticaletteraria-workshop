@@ -81,6 +81,10 @@ color: #fefefe;
     font-weight: bold;
 }
 
+.hero-full-screen .bottom-content-section {
+    padding: 0rem;
+}
+
 .title-bar {
     padding: 0.5rem;
     background: transparent;
@@ -597,7 +601,7 @@ iframe {
 
 @media screen and (max-width: 800px) {
     .hero-full-screen .bottom-content-section {
-        padding: 3rem;
+        padding: 0rem;
     }
 }
 
