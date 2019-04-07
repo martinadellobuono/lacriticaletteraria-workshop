@@ -461,3 +461,9 @@ iframe {
         fill: #cccccc;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .mail-form {
+        margin-top: 30px;
+    }
+}
