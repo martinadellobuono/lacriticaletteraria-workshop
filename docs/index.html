@@ -27,7 +27,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#programma">Programma</a></li>
                 <li><a href="#news">News</a></li>
-                <li><a href="#contatti">Contatti</a></li>
+                <li><a href="#contatti">Contatti&Booking</a></li>
               </ul>
             </div>
           </div>
@@ -43,7 +43,9 @@
                 </h1>
                 <hr>
                 <p class="full-screen-p">Our official workshop website</p>
-                <button class="button large full-screen-button" onclick="window.location.href='#about'">Learn more</button>
+                <div class="bottom-content-section" data-magellan data-threshold="0">
+                  <a href="#main-content-section"><button class="button large full-screen-button">Learn more</button></a>
+                </div>
               </div>
             </div>
           </div>
@@ -58,14 +60,78 @@
     <div id="main-content-section" data-magellan-target="main-content-section">
       <div class="grid-container" id="about">
         <div class="grid-x grid-padding-x">
-          <div class="large-6 cell">
-            <img src="img/about.png" class="about-img" alt="">
+          <div class="large-12 cell margin-top-media">
+            <h2 class="page-center-title">About the workshop</h2>
+            <hr class="news-hr">
+            <p class="page-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div class="large-6 cell margin-top-media">
-            <h2 class="page-title">About the workshop</h2>
-            <hr class="page-hr">
-            <p class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="grid-x grid-padding-x">
+          <div class="large-4 cell">
+            <div class="card-profile-stats">
+              <div class="card-profile-stats-intro">
+                <img class="card-profile-stats-intro-pic" src="https://pbs.twimg.com/profile_images/732634911761260544/OxHbNdTF.jpg" alt="profile-image" />
+              </div> <!-- /.card-profile-stats-intro -->
+            
+              <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                  <h3 class="speaker-title">Professor X</h3>
+                  <p class="speaker-p">Università di A</p>
+                </div>
+              </div>
+
+              <hr />
+            
+              <div class="card-profile-stats-container">
+                <p class="speaker-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div> <!-- /.card-profile-stats-container -->
+            </div> <!-- /.card-profile-stats -->            
           </div>
+
+          <!--SECONDA CARTA-->
+          <div class="large-4 cell">
+              <div class="card-profile-stats">
+                <div class="card-profile-stats-intro">
+                  <img class="card-profile-stats-intro-pic" src="https://pbs.twimg.com/profile_images/732634911761260544/OxHbNdTF.jpg" alt="profile-image" />
+                </div> <!-- /.card-profile-stats-intro -->
+              
+                <div class="grid-x grid-padding-x">
+                  <div class="large-12 cell">
+                    <h3 class="speaker-title">Professor Y</h3>
+                    <p class="speaker-p">Università di B</p>
+                  </div>
+                </div>
+  
+                <hr />
+              
+                <div class="card-profile-stats-container">
+                  <p class="speaker-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div> <!-- /.card-profile-stats-container -->
+              </div> <!-- /.card-profile-stats -->            
+            </div>
+
+          <!--TERZA CARD-->
+          <div class="large-4 cell">
+              <div class="card-profile-stats">
+                <div class="card-profile-stats-intro">
+                  <img class="card-profile-stats-intro-pic" src="https://pbs.twimg.com/profile_images/732634911761260544/OxHbNdTF.jpg" alt="profile-image" />
+                </div> <!-- /.card-profile-stats-intro -->
+              
+                <div class="grid-x grid-padding-x">
+                  <div class="large-12 cell">
+                    <h3 class="speaker-title">Professor Z</h3>
+                    <p class="speaker-p">Università di C</p>
+                  </div>
+                </div>
+  
+                <hr />
+              
+                <div class="card-profile-stats-container">
+                  <p class="speaker-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div> <!-- /.card-profile-stats-container -->
+              </div> <!-- /.card-profile-stats -->            
+            </div>
+
         </div>
       </div>
 
@@ -78,7 +144,7 @@
               </div>
             </div>
             <div class="grid-x grid-padding-x">
-              <div class="large-4 cell margin-top">
+              <div class="large-4 cell">
                 <img src="icon/talk-icon.png" class="icon" alt="">
                 <h3 class="icon-title">Talks and Open Forums</h3>
                 <p class="icon-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
@@ -157,13 +223,18 @@
         <div id="main-content-section" data-magellan-target="main-content-section" class="contact-strip">
           <div class="grid-container" id="contatti">
             <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                  <h2 class="page-center-title margin-top">Contatti&Booking</h2>
+                  <hr class="page-center-hr">
+                  <p class="page-center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.quip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
               <div class="large-6 cell margin-top">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.9015566781627!2d11.349257615511881!3d44.49668390549593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd4bb9919533f%3A0x28bbdd19297b033a!2sVia+Zamboni%2C+34%2C+40126+Bologna+BO!5e0!3m2!1sit!2sit!4v1554571228205!5m2!1sit!2sit" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
-              <div class="large-6 cell">
-                <h2 class="page-title margin-top">Contatti</h2>
-                <hr class="contact-hr">
-                <p class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.quip ex ea commodo consequat.</p>
+              <div class="large-6 cell margin-top">
                 <form action="">
                   <div class="row">
                     <div class="small-12 column">
@@ -191,7 +262,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="button large mail-button" onclick="window.location.href='#about'">Invio</button>
+                  <button class="button large mail-button">Invio</button>
                 </form>
               </div>
             </div>
