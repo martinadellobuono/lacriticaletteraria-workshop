@@ -392,26 +392,6 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
-    .hero-full-screen {
-        height: 100vh;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154493f6c27ea3/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
-        background-size: cover;
-    }
-}
-
-@media screen and (max-width: 800px) {
     .full-screen-title {
         margin-top: 50px;
         font-family: 'Roboto', sans-serif;
