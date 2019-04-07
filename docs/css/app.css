@@ -445,5 +445,14 @@ iframe {
     }    
 }
 
-
-
+@media screen and (max-width: 800px) {
+    .mail-button {
+        margin-top: 30px;
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #52c5d9;
+        border: 1px solid #52c5d9;
+        border-radius: 37px;
+    } 
+}
