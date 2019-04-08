@@ -3,6 +3,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+p {
+    font-size: 18px;
+}
+
 .hero-full-screen {
     height: 100vh;
     display: -webkit-flex;
@@ -17,7 +21,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154790f4c77ea0/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
+    background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154691f5c679a6/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
     background-size: cover;
 }
   
@@ -134,7 +138,17 @@ color: #fefefe;
 
 .button.large {
     font-size: 16px;
+    text-transform: uppercase;
 }
+
+.button.large:hover,
+.button.large:focus {
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+  }
+  
+  .button.large:active {
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.4);
+  }
 
 .full-screen-button {
     float: left;
@@ -351,6 +365,22 @@ text-transform: uppercase;
     height: auto;
 }
 
+.help-strip {
+    background-color: #52c5d9;
+}
+
+.help-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #323232;
+    text-align: center;
+}
+
+.help-p {
+    color: #323232;
+    text-align: center;
+}
+
 .footer-strip {
     background-color: #323232;
 }
@@ -371,6 +401,7 @@ text-transform: uppercase;
 }
 
 .footer-p {
+    font-size: 17px;
     color: #fff;
     text-align: center;
 }
@@ -484,9 +515,88 @@ iframe {
     border-radius: 20px;
 }
 
+.login-box {
+    background: #fefefe;
+    border-radius: 37px;
+    overflow: hidden;
+  }
+  
+  .login-box-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .login-box-form-section,
+  .login-box-social-section-inner {
+    padding: 2.5rem;
+  }
+  
+  .login-box-input {
+    margin-bottom: 1.25rem;
+    height: 2rem;
+    border: 0;
+    padding-left: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #52c5d9;
+    font-weight: 400;
+  }
+  
+  .login-box-input:focus {
+    color: #1779ba;
+    transition: 0.2s ease-in-out;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 2px solid #52c5d9;
+  }
+  
+  .login-box-submit-button {
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0.85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #52c5d9;
+    color: #fefefe;
+    width: 11%;
+    border-radius: 37px;
+    text-transform: uppercase;
+  }
+  
+  [data-whatinput='mouse'] .login-box-submit-button {
+    outline: 0;
+  }
+  
+  .login-box-submit-button:hover, .login-box-submit-button:focus {
+    background-color: #126195;
+    color: #fefefe;
+  }
+  
+  .login-box-submit-button:hover,
+  .login-box-submit-button:focus {
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
+  }
+  
+  .login-box-submit-button:active {
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.4);
+  }
+
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small {
+    font-size: 40px;
+    line-height: 0;
+    color: red;
+}
+
 @media screen and (max-width: 800px) {
     .full-screen-title {
-        padding-top: 15%;
+        padding-top: 35%;
         font-family: 'Roboto', sans-serif;
         font-size: 33px;
         text-align: left;
@@ -684,5 +794,11 @@ iframe {
   @media print, screen and (max-width: 800px){
     .card-profile-stats-intro-pic {
         width: 45%;
+    }
+  }
+
+  @media screen and (max-width: 39.9375em) {
+    .login-box .or {
+      top: 85%;
     }
   }
