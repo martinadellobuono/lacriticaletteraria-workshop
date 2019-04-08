@@ -596,7 +596,7 @@ h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 sma
 
 @media screen and (max-width: 800px) {
     .full-screen-title {
-        padding-top: 35%;
+        padding-top: 30%;
         font-family: 'Roboto', sans-serif;
         font-size: 33px;
         text-align: left;
