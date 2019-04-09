@@ -197,10 +197,10 @@ text-transform: uppercase;
 }
 
 .card-profile-stats {
-    border: 1px solid #fefefe;
+    border: 1px solid #f8f9fb;
     margin: 60px 0 0;
     padding: 1.25rem;
-    background: #fefefe;
+    background: #f8f9fb;
   }
   
   .card-profile-stats .card-profile-stats-intro {
