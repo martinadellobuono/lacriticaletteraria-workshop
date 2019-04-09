@@ -190,6 +190,16 @@ text-transform: uppercase;
     margin-top: 60px;
 }
 
+.date-place {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #163d50;
+    text-align: center;  
+}
+
 .page-text {
     margin-top: 60px;
     text-align: right;
@@ -826,5 +836,15 @@ span {
     .book-button {
         padding: 10px;
         width: 81%;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .date-place {
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #163d50;
+        text-align: center;  
     }    
 }
