@@ -365,20 +365,31 @@ text-transform: uppercase;
     height: auto;
 }
 
-.help-strip {
-    background-color: #52c5d9;
+.book-strip {
+    background-color: #163d50;
 }
 
-.help-title {
+.book-title {
+    color: #f8f9fb;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    color: #323232;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.book-p {
+    color: #f8f9fb;
     text-align: center;
 }
 
-.help-p {
-    color: #323232;
-    text-align: center;
+.book-button {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 18px !important;
 }
 
 .footer-strip {
@@ -810,3 +821,10 @@ span {
       top: 85%;
     }
   }
+
+@media screen and (max-width: 800px) {
+    .book-button {
+        padding: 10px;
+        width: 81%;
+    }    
+}
