@@ -21,7 +21,7 @@ p {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154996f3c779af/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
+    background: url("https://pixabay.com/get/e83db50a2ef5053ed1534705fb0938c9bd22ffd41cb4154996f4c079a3/books-1845614_1920.jpg?attachment, https://pixabay.com/photos/books-college-cover-document-1845614/") center center no-repeat;
     background-size: cover;
 }
   
