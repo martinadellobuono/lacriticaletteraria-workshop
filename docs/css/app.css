@@ -190,13 +190,19 @@ text-transform: uppercase;
     margin-top: 60px;
 }
 
-.date-place {
-    margin-bottom: 30px;
+.date-place-icon {
+    display: block;
+    margin: 0 auto;
     margin-top: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    width: 25%;
+}
+
+.date-place {
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
     font-weight: bold;
-    color: #163d50;
+    color: #323232;
     text-align: center;  
 }
 
