@@ -1035,3 +1035,12 @@ span {
       left: 0;
     }
   }
+
+@media screen and (max-width: 800px){
+    .timeline .timeline-item .timeline-content .timeline-content-date {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #f8f9fb;
+    }
+}
