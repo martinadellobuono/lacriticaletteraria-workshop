@@ -683,7 +683,6 @@ span {
 
 @media screen and (max-width: 800px) {
     .full-screen-title {
-        padding-top: 30%;
         font-family: 'Roboto', sans-serif;
         font-size: 33px;
         text-align: left;
