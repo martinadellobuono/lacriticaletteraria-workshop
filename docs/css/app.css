@@ -120,7 +120,7 @@ color: #fefefe;
 }
 
 .top-content-section {
-    position: fixed;
+    position: sticky;
 }
 
 .full-screen-title {
