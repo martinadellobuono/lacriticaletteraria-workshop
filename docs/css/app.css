@@ -21,7 +21,7 @@ p {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: url(".../img/cover.png") center center no-repeat;
+    background: url("/Users/martinadellobuono/Desktop/lacriticaletteraria-workshop-master/docs/img/cover.png") center center no-repeat;
     background-size: cover;
 }
   
