@@ -77,7 +77,6 @@ p {
 .hero-full-screen .top-bar .menu a {
     font-size: 14px;
     font-weight: bold;
-    color: #323233;
 }
 
 .hero-full-screen .bottom-content-section {
@@ -115,6 +114,7 @@ p {
 }
 
 .top-content-section {
+    position: -webkit-sticky;
     position: sticky;
 }
 
@@ -220,14 +220,6 @@ text-transform: uppercase;
     font-size: 18px;
 }
 
-.workshop-key {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 0;
-    color: #000;
-    font-weight: bold;    
-}
-
 .card-profile-stats {
     border: 1px solid #f8f9fb;
     padding: 1.25rem;
@@ -239,7 +231,7 @@ text-transform: uppercase;
   .card-user-stats {
     border: 1px solid #f8f9fb;
     padding: 1.25rem;
-    height: 80%;
+    height: 115px;
     background: #f8f9fb;
     margin-top: -23px;
   }
@@ -284,7 +276,8 @@ text-transform: uppercase;
 }
 
 .speaker-title {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: center;
@@ -652,17 +645,6 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
-    .hero-full-screen .top-bar .menu a {
-        margin: 1px;
-        width: 100%;
-        font-size: 14px;
-        font-weight: bold;
-        color: #323233;
-        background-color: whitesmoke;
-    }
-}
-
-@media screen and (max-width: 800px) {
     .about-img {
         display: block;
         margin: 0 auto;
@@ -859,9 +841,11 @@ iframe {
 }
 
 .flip-card {
+    position: relative;
+    z-index: 0;
     margin-top: 30px;
     background-color: transparent;
-    max-width: 450px;
+    max-width: 100%;
     height: 300px;
     perspective: 1000px;
   }
@@ -874,27 +858,16 @@ iframe {
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
+   
+  .flip-card-front {
     position: absolute;
     width: 100%;
     height: 83%;
-    backface-visibility: hidden;
   }
  
   .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-
-  .flip-card-back {
     background-color: #018abe;
-    color: white;
-    transform: rotateY(180deg);
+    color: black;
   }
   
   .flip-img {
@@ -1104,12 +1077,53 @@ iframe {
     z-index: 5;
   }
   
-  .hero-full-screen .top-bar .menu a:hover {
-    color: rgba(1, 138, 190, 0.9);
-}
-  
 @media screen and (max-width: 800px) {
     .bigger-hr {
         width: 85%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .hero-full-screen .top-bar {
+        width: 414px;
+        height: auto;
+        font-size: 14px;
+        font-weight: bold;
+        color: #323233;
+        background-color: #f8f9fb !important;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .hero-full-screen {
+        height: 133vh;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        background-image: url("../img/cover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    #homepage {
+        margin-top: -190px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sticky-container {
+        position: fixed;
     }
 }
