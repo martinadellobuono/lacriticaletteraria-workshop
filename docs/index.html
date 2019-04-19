@@ -351,7 +351,7 @@ include('invio.php');
                             
                         <p class="book-p margin-top">Per adattare i tutorial mostrati durante il workshop alle esigenze del pubblico, abbiamo preparato un questionario per conoscere in anticipo le competenze dei partecipanti da compilare prima dell'iscrizione.</p>
                         <p class="book-p margin-bottom">Compila il questionario e iscriviti senza temere per la tua privacy! Per noi la privacy è molto importante e ci impegnamo a non divulgare i tuoi dati. Per ulteriori informazioni è possibile consultare la nostra informativa sulla privacy.</p>
-                        <button class="button large full-screen-button book-button">Compila il questionario e iscriviti</button>
+                        <button class="button large full-screen-button book-button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfPU2E6qJQV34dCPpnMc2gRo1yRfaTe0eQwPmjAfoXTiD46HQ/viewform?usp=sf_link'">Compila il questionario e iscriviti</button>
                         </a>
                     </div>
                 </div>
@@ -374,16 +374,16 @@ include('invio.php');
                         </div>
                         <div class="large-12 cell margin-top">
                             <p class="full-screen-p">Lasciaci un messaggio</p>
-                            <!--<form action="">
+                            <form action="invio.php" method="post" id="modulo">
                                 <div class="row">
                                     <div class="small-12 column">
                                         <div class="form-floating-label">
-                                            <input type="text" id="name" name="name" required placeholder="Il tuo nome">
+                                            <input type="text" id="mail" name="mail" required placeholder="La tua mail">
                                         </div>
                                     </div>
                                     <div class="small-12 column">
                                         <div class="form-floating-label">
-                                            <input type="text" id="surname" name="surname" required placeholder="Il tuo cognome">
+                                            <input type="text" id="object" name="object" required placeholder="Oggetto">
                                         </div>
                                     </div>
                                     <div class="small-12 column">
@@ -393,41 +393,12 @@ include('invio.php');
                                     </div>
                                     <div class="small-12 column">
                                         <div class="form-floating-label">
-                                            <textarea name="" id="" rows="5" placeholder="Il tuo messaggio"></textarea>
+                                            <textarea name="body" id="body" rows="5" placeholder="Il tuo messaggio"></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="button large mail-button">Invio</button>
-                            </form>-->
-                            <form action="invio.php" method="post" id="modulo">
-                                    <table>
-                                     <tr>
-                                     <td>Il Suo indirizzo e-mail*</td>
-                                      <td><label>
-                                     <input name="mail" type="text" id="mail" />
-                                     </label></td>
-                                     </tr>
-                                     <tr>
-                                     <td>Oggetto*</td>
-                                     <td><label>
-                                     <input name="object" type="text" id="object" />
-                                     </label></td>
-                                     </tr>
-                                     <tr>
-                                      <td>Messaggio*</td>
-                                      <td>
-                                      <textarea name="body" cols="30" rows="5" id="body"></textarea>
-                                     </td>
-                                     </tr>
-                                     <tr>
-                                     <td><label></label>
-                                     </td>
-                                     <td><label>
-                                   <input type="submit" name="submit" id="submit" value="Invia" /> <input type="reset" name="cancella" id="cancella" value="Ripristina" />
-                                     </label></td>
-                                     </tr>
-                                     </table>
-                                     </form>  
+                                <input class="button large mail-button" type="submit" name="submit" id="submit" value="Invia" />
+                            </form>
                         </div>
                     </div>
                 </div>
