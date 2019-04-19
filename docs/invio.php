@@ -1,7 +1,7 @@
 <?php
 
  if ((trim($_POST['object']) != "") && (trim($_POST['body']) != "")) {    
-  $to = "\n jane.07.2013@gmail.com";
+  $to = "jane.07.2013@gmail.com";
 $headers = "From: " . $_POST['mail'] . "\n";
 
   $subject = "Modulo proveniente da www.tuosito.it";
