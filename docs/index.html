@@ -39,7 +39,7 @@
         <div class="middle-content-section">
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
-                    <div class="large-6 cell">
+                    <div class="large-6 cell" id="homepage">
                         <h1 class="full-screen-title">La critica letteraria nell'era del digitale</h1>
                         <hr>
                         <p class="full-screen-p">Distant-Reading & Sentiment Analysis workshop</p>
@@ -54,7 +54,7 @@
         </div>
 
         <div class="bottom-content-section" data-magellan data-threshold="0">
-            <a href="#main-content-section">
+            <a href="#main-content-section" id="about">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z" />
                 </svg>
@@ -63,12 +63,13 @@
     </div>
 
     <div id="main-content-section" data-magellan-target="main-content-section">
-        <div class="grid-container" id="about">
+        <div class="grid-container">
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell margin-top-media">
                     <h2 class="page-center-title">About</h2>
                     <hr class="news-hr">
-                    <p class="page-center-text margin-top">L’idea alla base del workshop "La critica letteraria nell'era del digitale" è quella di rendere più coscienti gli studenti di quanto la digitalizzazione e l’utilizzo di tools specifici allarghino il campo d’azione della critica letteraria e, in generale, dello studio dei testi. Verranno forniti agli studenti conoscenze e strumenti concreti che possano essere utilizzati per approfondire tematiche quali la <span class="workshop-key">stilometria</span> (verrà illustrato l’utilizzo di Stylo R package), l’<span class="workshop-key">annotazione semantica</span> con l’ausilio di Recogito, che permette di creare mappe dal testo, annotare immagini e connettere personali ricerche ai dati che sono disponibili in rete. Inoltre, verranno affrontati i seguenti argomenti: <span class="workshop-key">Topic Modeling</span>, <span class="workshop-key">Network Analysis</span> e <span class="workshop-key">Data Visualisation</span>.</p>
+                    <p class="page-center-text margin-top">Lo sviluppo di strumenti e metodologie di analisi computazionale del testo ha allargato in maniera decisiva il campo d’azione della critica letteraria.  Il workshop si propone di fornire agli studenti gli elementi per comprendere e praticare i fondamenti che costituiscono la base teorico-applicativa di strumenti legati al paradigma del <em>distant reading</em>, con particolare riguardo alla <strong>stilometria</strong>, alla <strong>sentiment analysis</strong> e all’ <strong>annotazione semantica</strong>. Saranno inoltre affrontate tematiche affini, quali il <strong>topic modeling</strong>, la <strong>network analysis</strong> e la <strong>data visualization</strong>. In particolare, gli strumenti previsti sono: <strong>Stylo R</strong>, pacchetto utilizzabile in ambiente R per effettuare analisi stilometriche, e <strong>Recogito</strong>, software che permette di realizzare mappe concettuali, annotare immagini e connettere ricerche personali ai dati disponibili online a partire dall’oggetto testuale.</p>
+                    <button onclick="top()" id="myBtn" title="Go to top">Top</button>
                 </div>
             </div>
             <div class="grid-x grid-padding-x">
@@ -78,14 +79,10 @@
                             <div class="tag-container">
                                 <h3 class="tag date">Data</h3>
                             </div>
-                            <div class="flip-card-front caption">
-                                <img src="img/date.png" class="flip-img" alt="">
-                                <span class="transparent-date">
-                                    <strong>27 maggio 2019</strong>
-                                </span>
-                            </div>
-                            <div class="flip-card-back date">
-                                <p class="back-caption">
+                            <div class="flip-card-front date">
+                                <p class="back-caption clear">
+                                <span class="back-span">27 maggio 2019</span>
+                                </br> 
                                 <span class="back-span">Dalle 9:00 alle 18:00</span> 
                                 </br>
                                 Nella prima parte della giornata si terrà un'introduzione teorica. Seguiranno nella seconda parte attività pratiche di laboratorio.</p>
@@ -99,15 +96,11 @@
                             <div class="tag-container">
                                 <h3 class="tag location">Location</h3>
                             </div>
-                            <div class="flip-card-front caption">
-                                <img src="img/location.png" class="flip-img" alt="">
-                                <span class="transparent-location">
-                                    <strong>Via Zamboni, 34</strong>
-                                </span>
-                            </div>
-                            <div class="flip-card-back location">
-                                <p class="back-caption">
-                                <span class="back-span">Aula Affreschi</span> 
+                            <div class="flip-card-front location">
+                                <p class="back-caption clear">
+                                <span class="back-span">Aula Affreschi</span>
+                                </br> 
+                                <span class="back-span">Via Zamboni 34, Bologna</span> 
                                 </br>
                                 Sede del Corso di Laurea "Digital Humanities and Digital Knowledge", Alma Mater Studiorum - Università di Bologna.
                                 </p>
@@ -121,15 +114,11 @@
                             <div class="tag-container">
                                 <h3 class="tag organization">Organizzazione</h3>
                             </div>
-                            <div class="flip-card-front caption">
-                                <img src="img/organization.png" class="flip-img" alt="">
-                                <span class="transparent-organization">
-                                    <strong>DHDK master's degree</strong>
-                                </span>
-                            </div>
-                            <div class="flip-card-back organization">
-                                <p class="back-caption">
-                                <span class="back-span"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" class="flip-link" alt="DHDK website">Digital Humanities and Digital Knowledge Master's degree</a></span> 
+                            <div class="flip-card-front organization">
+                                <p class="back-caption clear">
+                                <span class="back-span"><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" class="flip-link" target="_blank" alt="DHDK website">Digital Humanities and Digital Knowledge Master's degree</a></span> 
+                                </br>
+                                <span class="back-span"><a href="https://www.unibo.it/it" class="flip-link" target="_blank" alt="Alma Mater Studiorum website">Alma Mater Studiorum</a></span> 
                                 </br>
                                 Progetto a cura della Prof.ssa Tomasi, della Prof.ssa Italia e di studenti di DHDK.
                                 </p>
@@ -145,17 +134,11 @@
                             <div class="tag-container">
                                 <h3 class="tag">Speaker</h3>
                             </div>
-                            <div class="flip-card-front caption">
-                                <img src="img/speaker.png" class="flip-img" alt="">
-                                <span class="transparent-span">
-                                    <strong>Prof.ssa Tiziana Mancinelli</strong>
-                                </span>
-                            </div>
-                            <div class="flip-card-back">
-                                <p class="back-caption">
-                                <span class="back-span"><a href="https://www.unive.it/data/persone/13256131" class="flip-link" alt="Dott.ssa Tiziana Mancinelli website">Dott.ssa Tiziana Mancinelli</a></span> 
+                            <div class="flip-card-front">
+                                <p class="back-caption clear">
+                                <span class="back-span"><a href="https://www.unive.it/data/persone/13256131" class="flip-link" target="_blank" alt="Dott.ssa Tiziana Mancinelli website">Dott.ssa Tiziana Mancinelli</a></span> 
                                 </br>
-                                <strong>Università Ca' Foscari Venezia</strong>
+                                <strong>Università di Verona, Dipartimento di Lingue e Letterature straniere</strong>
                                 </br>
                                 E-mail: tiziana.mancinelli@gmail.com
                                 </p>
@@ -169,19 +152,13 @@
                             <div class="tag-container">
                                 <h3 class="tag">Speaker</h3>
                             </div>
-                            <div class="flip-card-front caption">
-                                <img src="img/speaker-2.png" class="flip-img" alt="">
-                                <span class="transparent-span">
-                                    <strong>Dott. Simone Rebora</strong>
-                                </span>
-                            </div>
-                            <div class="flip-card-back">
-                                <p class="back-caption">
-                                <span class="back-span"><a href="https://www.gcdh.de/en/404/" class="flip-link" alt="Dott. Simone Rebora website">Dott. Simone Rebora</a></span> 
+                            <div class="flip-card-front">
+                                <p class="back-caption clear">
+                                <span class="back-span"><a href="http://www.gcdh.de/en/people/guests/simone-rebora" class="flip-link" target="_blank" alt="Dott. Simone Rebora website">Dott. Simone Rebora</a></span> 
                                 </br>
-                                <strong>Georg-August-Universität Göttingen</strong>
+                                <strong>Università di Verona e Università di Göttingen, Centre for Digital Humanities</strong>
                                 </br>
-                                E-mail: simone.rebora@phil.uni-goettingen.de
+                                E-mail: simone.rebora@phil.uni-goettingen.de 
                                 </p>
                             </div>
                         </div>
@@ -193,17 +170,11 @@
                             <div class="tag-container">
                                 <h3 class="tag">Speaker</h3>
                             </div>
-                            <div class="flip-card-front caption">
-                                <img src="img/speaker-3.png" class="flip-img" alt="">
-                                <span class="transparent-span">
-                                    <strong>Dott.ssa Rachele Sprugnoli</strong>
-                                </span>
-                            </div>
-                            <div class="flip-card-back">
-                                <p class="back-caption">
-                                <span class="back-span"><a href="https://dh.fbk.eu/people/profile/sprugnoli" class="flip-link" alt="Dott.ssa Rachele Sprugnoli website">Dott.ssa Rachele Sprugnoli</a></span> 
+                            <div class="flip-card-front">
+                                <p class="back-caption clear">
+                                <span class="back-span"><a href="https://dh.fbk.eu/people/profile/sprugnoli" class="flip-link" target="_blank" alt="Dott.ssa Rachele Sprugnoli website">Dott.ssa Rachele Sprugnoli</a></span> 
                                 </br>
-                                <strong>Università di Pisa</strong>
+                                <strong>Fondazione Bruno Kessler</strong>
                                 </br>
                                 E-mail: sprugnoli@fbk.eu
                                 </p>
@@ -228,43 +199,50 @@
                     <div class="large-12 cell margin-top">
                         <h2 class="book-title">Programma</h2>
                         <hr class="page-center-hr">
+                        <p class="book-p margin-top">Il workshop, della durata di una giornata, si svilupperà in due fasi principali: una prima fase di presentazione delle tematiche da un punto di vista teorico, arricchita dall’esposizione delle esperienze di lavoro dei relatori, con riferimento anche agli strumenti che verranno utilizzati, e una seconda fase, dedicata all’utilizzo da parte degli studenti, supervisionati dai relatori, degli strumenti introdotti in precedenza.</p>
                     </div>
                 </div>
                 <div class="grid-x grid-padding-x">
                     <div class="large-4 cell">
                         <p><img src="icon/opening.png" class="date-place-icon" alt=""></p>
                         <h3 class="program-icon-sub clear">Opening</h3>
-                        <p class="program-icon-caption clear"><span class="program-icon-hour">9:00 - 9:30</span> Benvenuto alla Prof.ssa Tiziana Mancinelli, al Dott. Simone Rebora e alla Dott.ssa Rachele Sprugnoli da parte della Prof.ssa Francesca Tomasi, coordinatrice del corso di Laurea DHDK e introduzione al workshop da parte della Prof.ssa Paola Italia.</p>
+                        <p class="program-icon-caption clear"><span class="program-icon-hour">9:00 - 9:30</span> Benvenuto alla Prof.ssa Tiziana Mancinelli, alla Dott.ssa Rachele Sprugnoli e al Dott. Simone Rebora da parte della Prof.ssa Francesca Tomasi, coordinatrice del corso di Laurea Digital Humanities and Digital Knowledge (DHDK), e introduzione al workshop da parte della Prof.ssa Paola Italia.</p>
                         </p>
                     </div>
                     <div class="large-4 cell">
                         <p><img src="icon/intro.png" class="date-place-icon" alt=""></p>
                         <h3 class="program-icon-sub clear">Introduzione</h3>
-                        <p class="program-icon-caption clear"><span class="program-icon-hour">9:30 - 11:30</span> Introduzione alle tematiche Distant-Reading e Sentiment Analysis in relazione allo studio letterario e introduzione a specifiche tecniche e tools h.</p>
+                        <p class="program-icon-caption clear"><span class="program-icon-hour">9:30 - 11:00</span> Introduzione alle tematiche di distant reading e sentiment analysis in relazione allo studio di testi letterari e introduzione a specifiche tecniche e strumenti computazionali di analisi testuale.</p>
+                        </p>
+                    </div>
+                    <div class="large-4 cell">
+                        <p><img src="icon/coffee.png" class="date-place-icon" alt=""></p>
+                        <h3 class="program-icon-sub clear">Coffee break</h3>
+                        <p class="program-icon-caption clear"><span class="program-icon-hour">11:00 - 11:30</span></p>
                         </p>
                     </div>
                     <div class="large-4 cell">
                         <p><img src="icon/lab.png" class="date-place-icon" alt=""></p>
-                        <h3 class="program-icon-sub clear">Laboratorio pt.1</h3>
-                        <p class="program-icon-caption clear"><span class="program-icon-hour">11:30 - 13:00</span> Prima parte di laboratorio pratico su distant reading e sentiment analysis a cura della Prof.ssa Mancinelli, del Dott. Simone Rebora e della Dott.ssa Rachele Sprugnoli.</p>
+                        <h3 class="program-icon-sub clear">Laboratorio - parte 1</h3>
+                        <p class="program-icon-caption clear"><span class="program-icon-hour">11:30 - 13:00</span> Prima parte di laboratorio pratico su distant reading e sentiment analysis a cura della Prof.ssa Mancinelli, della Dott.ssa Sprugnoli e del Dott. Rebora.</p>
                         </p>
                     </div>
                     <div class="large-4 cell">
                         <p><img src="icon/food.png" class="date-place-icon" alt=""></p>
-                        <h3 class="program-icon-sub clear">Food&Beverage</h3>
-                        <p class="program-icon-caption clear"><span class="program-icon-hour">13:00 - 14:30</span> Benvenuto alla Prof.ssa Tiziana Mancinelli, al Dott. Simone Rebora e alla Dott.ssa Rachele Sprugnoli da parte della Prof.ssa Francesca Tomasi, coordinatrice del corso di Laurea DHDK e introduzione al workshop da parte della Prof.ssa Paola Italia.</p>
+                        <h3 class="program-icon-sub clear">Pausa pranzo</h3>
+                        <p class="program-icon-caption clear"><span class="program-icon-hour">13:00 - 14:30</span></p>
                         </p>
                     </div>
                     <div class="large-4 cell">
                         <p><img src="icon/lab.png" class="date-place-icon" alt=""></p>
-                        <h3 class="program-icon-sub clear">Laboratorio pt.2</h3>
-                        <p class="program-icon-caption clear"><span class="program-icon-hour">14:30 - 18:00</span> Seconda parte di laboratorio pratico su distant reading e sentiment analysis a cura della Prof.ssa Mancinellil, del Dott. Simone Rebora e della Dott.ssa Rachele Sprugnoli.</p>
+                        <h3 class="program-icon-sub clear">Laboratorio - Parte 2</h3>
+                        <p class="program-icon-caption clear"><span class="program-icon-hour">14:30 - 18:00</span> Seconda parte di laboratorio pratico su distant reading e sentiment analysis a cura della Prof.ssa Mancinelli, della Dott.ssa Sprugnoli e del Dott. Rebora.</p>
                         </p>
                     </div>
                     <div class="large-4 cell">
                         <p><img src="icon/conclusioni.png" class="date-place-icon" alt=""></p>
                         <h3 class="program-icon-sub clear">Conclusioni</h3>
-                        <p class="program-icon-caption clear"><span class="program-icon-hour">18:00 - 18:30</span> Prima parte di laboratorio pratico su distant reading e sentiment analysis a cura della Prof.ssa Mancinelli, del Dott. Simone Rebora e della Dott.ssa Rachele Sprugnoli.</p>
+                        <p class="program-icon-caption clear"><span class="program-icon-hour">18:00 - 18:30</span> Conclusione dei lavori e dibattito con i relatori.</p>
                         </p>
                     </div>
                 </div>
@@ -272,14 +250,14 @@
             </div>
         </div>
     </div>
-
-    <div class="strip news-strip" id="news">
+    <div id="news"></div>
+    <div class="strip news-strip">
         <div class="grid-container">
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell margin-top-media">
                     <h2 class="page-center-title">A chi ci rivolgiamo</h2>
                     <hr class="news-hr bigger-hr">
-                    <p class="page-center-text margin-top">Le attività saranno svolte in italiano o in lingua inglese a seconda dei partecipanti che si registreranno. Si prevede che gli studenti, alla fine dei lavori, abbiano assimilato nozioni tecnico-pratiche che li rendano capaci di utilizzare i tools open source mostrati, applicandoli attivamente nella realizzazione di progetti in grado di proporre un approccio innovativo e creativo alla critica testuale.</p>
+                    <p class="page-center-text margin-top">Il workshop è aperto a tutti e, in special modo, si rivolge agli studenti appartenenti al Dipartimento di Filologia Classica e Italianistica (FICLIT). Le attività saranno svolte in italiano o in lingua inglese, a seconda dei partecipanti che si registreranno. Si prevede che gli studenti, alla fine dei lavori, abbiano assimilato nozioni tecnico-pratiche che li rendano capaci di utilizzare gli strumenti presentati nella realizzazione di progetti che prevedano un approccio innovativo e creativo alla critica testuale e letteraria.</p>
                 </div>
             </div>
             <div class="grid-x grid-padding-x">
@@ -292,12 +270,8 @@
                     <div class="card-user-stats">
                         <div class="grid-x grid-padding-x">
                             <div class="large-12 cell">
-                                <h3 class="speaker-title">Studenti</h3>
+                                <h3 class="speaker-title">Studenti FICLIT</h3>
                             </div>
-                        </div>
-
-                        <div class="card-profile-stats-container">
-                            <p class="speaker-p">Studenti del Corso di Laurea Magistrale Italianistica - Alma Mater Studiorum - Università di Bologna.</p>
                         </div>
                         <!-- /.card-profile-stats-container -->
                     </div>
@@ -315,10 +289,6 @@
                                 <h3 class="speaker-title">Dottorandi ed esperti</h3>
                             </div>
                         </div>
-
-                        <div class="card-profile-stats-container">
-                            <p class="speaker-p">Studenti del Corso di Laurea Magistrale Italianistica - Alma Mater Studiorum - Università di Bologna.</p>
-                        </div>
                         <!-- /.card-profile-stats-container -->
                     </div>
                     <!-- /.card-profile-stats -->
@@ -335,10 +305,6 @@
                                 <h3 class="speaker-title">Interessati al settore</h3>
                             </div>
                         </div>
-
-                        <div class="card-profile-stats-container">
-                            <p class="speaker-p">Studenti del Corso di Laurea Magistrale Italianistica - Alma Mater Studiorum - Università di Bologna.</p>
-                        </div>
                         <!-- /.card-profile-stats-container -->
                     </div>
                     <!-- /.card-profile-stats -->
@@ -346,11 +312,11 @@
             </div>
         </div>
 
-        <div class="strip book-strip">
+        <div class="strip book-strip" id="booking">
             <div class="grid-container">
                 <div class="grid-x grid-padding-x">
                     <div class="large-12 cell margin-top">
-                        <h2 class="book-title" id="booking">Booking</h2>
+                        <h2 class="book-title">Booking</h2>
                         <hr class="page-center-hr">
                         
                            
@@ -405,7 +371,7 @@
                         </div>
                         <div class="large-12 cell margin-top">
                             <p class="full-screen-p">Lasciaci un messaggio</p>
-                            <form action="">
+                            <!--<form action="">
                                 <div class="row">
                                     <div class="small-12 column">
                                         <div class="form-floating-label">
@@ -429,7 +395,36 @@
                                     </div>
                                 </div>
                                 <button class="button large mail-button">Invio</button>
-                            </form>
+                            </form>-->
+                            <form action="invio.php" method="post" id="modulo">
+                                    <table>
+                                     <tr>
+                                     <td>Il Suo indirizzo e-mail*</td>
+                                      <td><label>
+                                     <input name="mail" type="text" id="mail" />
+                                     </label></td>
+                                     </tr>
+                                     <tr>
+                                     <td>Oggetto*</td>
+                                     <td><label>
+                                     <input name="object" type="text" id="object" />
+                                     </label></td>
+                                     </tr>
+                                     <tr>
+                                      <td>Messaggio*</td>
+                                      <td>
+                                      <textarea name="body" cols="30" rows="5" id="body"></textarea>
+                                     </td>
+                                     </tr>
+                                     <tr>
+                                     <td><label></label>
+                                     </td>
+                                     <td><label>
+                                   <input type="submit" name="submit" id="submit" value="Invia" /> <input type="reset" name="cancella" id="cancella" value="Ripristina" />
+                                     </label></td>
+                                     </tr>
+                                     </table>
+                                     </form>  
                         </div>
                     </div>
                 </div>
@@ -460,7 +455,7 @@
             <script src="js/vendor/foundation.js"></script>
             <script src="js/app.js"></script>
             <script src="js/countdown.js"></script>
-            <script src="js/active-item.js"></script>
+            <script src="js/scroll-bar.js"></script>
 </body>
 
 </html>
