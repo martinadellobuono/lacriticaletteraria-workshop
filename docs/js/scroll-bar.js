@@ -1,6 +1,6 @@
 window.onscroll = function() {scrollFunction()};
-var toChange = document.getElementById("example-menu");
-var mobile = document.getElementById("mobile-menu");
+var toChange = document.getElementById("mobile-menu");
+var mobile = document.getElementById("lista");
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
