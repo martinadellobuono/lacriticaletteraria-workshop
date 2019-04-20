@@ -809,7 +809,7 @@ iframe {
   @media print, screen and (max-width: 800px){
     .speaker-title {
         margin-top: 30px;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 25px;
         font-weight: bold;
         text-align: center;
