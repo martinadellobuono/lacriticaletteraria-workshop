@@ -1093,6 +1093,15 @@ iframe {
     }
 }
 
+@media screen and (max-width: 425px){
+    .hero-full-screen .top-bar {
+        height: 240px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #323233;
+    }
+}
+
 @media screen and (max-width: 374px) {
     .hero-full-screen {
         height: 133vh;
