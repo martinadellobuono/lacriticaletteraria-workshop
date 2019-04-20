@@ -1086,7 +1086,7 @@ iframe {
 
 @media screen and (max-width: 1024px){
     .hero-full-screen .top-bar {
-        width: 414px;
+        width: 100%;
         height: auto;
         font-size: 14px;
         font-weight: bold;
