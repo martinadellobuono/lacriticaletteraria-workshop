@@ -1135,3 +1135,13 @@ iframe {
         position: fixed;
     }
 }
+
+#privacy-policy {
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+    color: #f8f9fb;
+}
+
+#privacy-policy:hover {
+    color: #97cadb;
+}
