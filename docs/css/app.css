@@ -865,13 +865,10 @@ iframe {
     position: absolute;
     width: 100%;
     height: 83%;
-  }
- 
-  .flip-card-front {
     background-color: #018abe;
     color: black;
   }
-  
+   
   .flip-img {
     width: 100%;
     height: 99.5%;
