@@ -1146,3 +1146,24 @@ iframe {
 #privacy-policy:hover {
     color: #97cadb;
 }
+
+@media screen and (max-width: 767px) {
+    .hero-full-screen .top-bar .menu{
+        display: block;
+        margin: 0 auto;
+        padding: 0px;
+        width: 800px;
+        background-color: #f8f9fb;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .hero-full-screen .top-bar {
+        padding: 0px;
+        position: relative;
+        top: -4px;
+        height: 226px;
+        width: fit-content;
+        color: #323233;
+    }
+}
