@@ -1180,3 +1180,7 @@ iframe {
 #mail-policy:hover {
     color: #97cadb;
 }
+
+.active {
+    color: #1779ba;
+}
