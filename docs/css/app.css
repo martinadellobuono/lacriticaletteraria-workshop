@@ -1170,3 +1170,13 @@ iframe {
         color: #323233;
     }
 }
+
+#mail-policy {
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+    color: #323232;
+}
+
+#mail-policy:hover {
+    color: #97cadb;
+}
