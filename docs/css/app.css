@@ -280,7 +280,6 @@ text-transform: uppercase;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    color: #323232;
     text-align: center;
 }
 
@@ -405,6 +404,12 @@ text-transform: uppercase;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+    .book-title {
+        font-size: 25px;
+    }
 }
 
 .book-p {
@@ -638,7 +643,7 @@ iframe {
 @media screen and (max-width: 800px) {
     .full-screen-title {
         font-family: 'Roboto', sans-serif;
-        font-size: 38px;
+        font-size: 33px;
         text-align: left;
         text-transform: uppercase;
         line-height: 47px;
@@ -868,7 +873,7 @@ iframe {
     background-color: #018abe;
     color: black;
   }
-   
+ 
   .flip-img {
     width: 100%;
     height: 99.5%;
@@ -1131,6 +1136,7 @@ iframe {
 @media screen and (max-width: 767px) {
     .sticky-container {
         position: fixed;
+        width: 100%;
     }
 }
 
