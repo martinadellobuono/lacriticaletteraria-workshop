@@ -1,7 +1,7 @@
 var privacyInfo = document.getElementById("privacy-info");
 
 function privacy() {
-    privacyInfo.innerHTML = "<h3> Privacy Policy</h3> Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification."
+    privacyInfo.innerHTML = "<h3>Informativa sulla privacy</h3>La tua privacy è molto importante per noi. Di conseguenza, abbiamo sviluppato questa Politica per farvi capire come raccogliamo, usiamo, comunichiamo e divulghiamo e facciamo uso di informazioni personali. Proteggiamo le informazioni personali mediante ragionevoli misure di sicurezza contro la perdita o il furto, nonché l'accesso non autorizzato, la divulgazione, la copia, l'uso o la modifica."
     privacyInfo.style.color = "#f8f9fb";
     privacyInfo.style.textAlign = "justify";
 }
