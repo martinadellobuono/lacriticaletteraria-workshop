@@ -1095,7 +1095,7 @@ iframe {
 
 @media screen and (max-width: 1024px){
     .hero-full-screen .top-bar {
-        height: auto;
+        height: 75px;
         font-size: 14px;
         font-weight: bold;
         color: #323233;
