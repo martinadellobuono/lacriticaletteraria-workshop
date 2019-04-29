@@ -201,6 +201,12 @@ text-transform: uppercase;
     text-align: center;  
 }
 
+@media screen and (max-width: 800px) {
+    .program-icon-sub {
+        font-size: 24px;
+    }
+}
+
 .program-icon-
  {
     font-family: 'Roboto', sans-serif;
@@ -643,7 +649,7 @@ iframe {
 @media screen and (max-width: 800px) {
     .full-screen-title {
         font-family: 'Roboto', sans-serif;
-        font-size: 35px;
+        font-size: 33px;
         text-align: left;
         text-transform: uppercase;
         line-height: 47px;
@@ -849,7 +855,7 @@ iframe {
 
 .flip-card {
     position: relative;
-    z-index: 0;
+    z-index: -1;
     margin-top: 30px;
     background-color: transparent;
     max-width: 100%;
@@ -1150,6 +1156,16 @@ iframe {
     color: #97cadb;
 }
 
+#mail-policy {
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+    color: #323232;
+}
+
+#mail-policy:hover {
+    color: #97cadb;
+}
+
 @media screen and (max-width: 767px) {
     .hero-full-screen .top-bar .menu{
         display: block;
@@ -1169,16 +1185,6 @@ iframe {
         width: fit-content;
         color: #323233;
     }
-}
-
-#mail-policy {
-    font-family: "Roboto", sans-serif;
-    text-decoration: underline;
-    color: #323232;
-}
-
-#mail-policy:hover {
-    color: #97cadb;
 }
 
 .active {
